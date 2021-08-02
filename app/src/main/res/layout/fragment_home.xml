@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jar.demo.ui.fragment.home.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnTask1"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:minWidth="100dp"
+            android:onClick="@{(view)-> viewModel.onClick(view)}"
+            android:text="@string/task_1"
+            app:layout_constraintBottom_toTopOf="@+id/btnTask2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTask2"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:minWidth="100dp"
+            android:onClick="@{(view)-> viewModel.onClick(view)}"
+            android:text="@string/task_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTask1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

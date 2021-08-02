@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jar Demo</string>
+    <string name="api_timeout">Api timed out!</string>
+    <string name="no_internet">No internet connection!</string>
+
+    <string name="task_1">Task 1</string>
+    <string name="task_2">Task 2</string>
+    <string name="please_wait">Please wait...</string>
+</resources>
